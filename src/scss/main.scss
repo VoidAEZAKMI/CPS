@@ -50,14 +50,6 @@ ol {
   body {
     display: flex;
 
-    .l-main-content {
-      flex-direction: column;
-    }
-    .l-aside-container {
-      display: flex;
-      flex-direction: column;
-      background: #fff;
-      order: -1;
-    }
+    
   }
 }
