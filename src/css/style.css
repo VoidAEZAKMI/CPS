@@ -1,7 +1,11 @@
-.header-menu {
+.block-header-menu {
   height: 88px;
   display: flex;
   align-items: center;
   background-color: #fff;
   border-bottom: 2px solid #d9fff5;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ---- MOBILE ---- */
+/* ---- TABLET ---- */
+/* ---- DESKTOP ---- */

@@ -1,7 +1,24 @@
-.header-menu {
+.block-header-menu {
     height: 88px;
     display: flex;
     align-items: center;
     background-color: #fff;
     border-bottom: 2px solid #d9fff5;
-}
+  
+
+  }
+  
+  /* ---- MOBILE ---- */
+  @media screen and (max-width: 767.9px) {
+    
+  }
+  
+  /* ---- TABLET ---- */
+  @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
+    
+  }
+  
+  /* ---- DESKTOP ---- */
+  @media screen and (min-width: 1023.9px) {
+    
+  }
