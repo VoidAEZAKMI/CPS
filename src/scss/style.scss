@@ -4,21 +4,139 @@
     align-items: center;
     background-color: #fff;
     border-bottom: 2px solid #d9fff5;
-  
-
+  &__elem-dash {
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 1px;
+    background: #eaeaea;
   }
+  &--mod-model {
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+
+}
+
+.block-headmain {
+  display: flex;
+
+  &__elem-title {
+    margin-left: 12px;
+    color: #1b1c21;
+    font-family: TT Lakes Bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.857%;
+    letter-spacing: -0.6px;
+  }
+  &__elem-nav-icon {
+    display: none;
+    margin-right: 32px;
+  }
+  &__elem-nav-icon:last-child {
+    margin-right: 0;
+  }
+  &__elem-nav-icon > span {
+    padding-right: 8px;
+    color: #1b1c21;
+    text-align: right;
+    font-family: TT Lakes Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+  }
+  &--mod-model {
+    margin-bottom: 24px;
+  }
+}
   
   /* ---- MOBILE ---- */
   @media screen and (max-width: 767.9px) {
+    .block-header-menu {
+      &__elem-dash:nth-child(7) {
+        margin-right: auto;
+      }
+      // Отступы между каждым элементом
+      &__elem-nav-icon,
+      &__elem-logo {
+        margin-right: 16px;
+      }
+      // Удаление отступа после последнего
+      &__elem-nav-icon:last-child {
+        margin-right: 0;
+      }
+  
+      &__elem-nav-icon:nth-child(n + 3):nth-child(-n + 6) {
+        display: none;
+      }
+      &__elem-dash:nth-child(2) {
+        display: none;
+      }
+    }
+
+
     
   }
   
   /* ---- TABLET ---- */
   @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
-    
+    .block-header-menu {
+      &__elem-logo {
+        margin-right: auto;
+      }
+      // Отступы между каждым элементом
+      &__elem-nav-icon,
+      &__elem-dash {
+        margin-right: 16px;
+      }
+      // Удаление отступа после последнего
+      &__elem-nav-icon:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .block-headmain {
+      &__elem-title {
+        margin-left: 24px;
+      }
+      &--mod-model {
+        margin-bottom: 32px;
+      }
+    }
   }
   
   /* ---- DESKTOP ---- */
   @media screen and (min-width: 1023.9px) {
-    
+    .block-header-menu {
+      display: none;
+    }
+
+    .block-headmain {
+      &__elem-title {
+        margin-left: 30px;
+        margin-right: auto;
+      }
+      &__elem-nav-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        color: #1b1c21;
+        text-align: right;
+        font-family: TT Lakes;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.2px;
+      }
+      &--mod-model {
+        margin: 42px 16px 8px 0;
+      }
+    }
   }

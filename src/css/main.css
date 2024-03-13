@@ -51,13 +51,4 @@ ol {
   body {
     display: flex;
   }
-  body .l-main-content {
-    flex-direction: column;
-  }
-  body .l-aside-container {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    order: -1;
-  }
-}
+}/*# sourceMappingURL=main.css.map */
