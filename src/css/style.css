@@ -100,7 +100,7 @@
   border-radius: 6px;
 }
 .block-slidemain .block-content-info__elem-text {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   color: #1b1c21;
   font-family: TT Lakes;
   font-size: 14px;
@@ -201,13 +201,13 @@
   }
   .block-content--mod-model {
     margin: 0 24px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
   .block-content-info__elem-paragraph-3 {
     display: none;
   }
   .block-content-info__elem-next-container {
-    margin: 10px;
+    margin-top: 10px;
   }
 }
 /* ---- DESKTOP ---- */
@@ -258,4 +258,7 @@
   .block-content--mod-model {
     margin: 0 28px 48px 32px;
   }
-}/*# sourceMappingURL=style.css.map */
+  .block-content-info__elem-next-container {
+    margin-top: 15px;
+  }
+}

@@ -1,9 +1,9 @@
 .block-header-menu {
-    height: 88px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-bottom: 2px solid #d9fff5;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 2px solid #d9fff5;
   &__elem-dash {
     width: 2px;
     height: 32px;
@@ -114,7 +114,7 @@
 
   .block-content-info {
     &__elem-text {
-      margin-bottom: 36px;
+      margin-bottom: 16px;
   
       color: #1b1c21;
       font-family: TT Lakes;
@@ -208,12 +208,12 @@
       &__elem-log-box {
         margin-right: auto;
       }
-      // Отступы между каждым элементом
+      
       &__elem-nav-icon,
       &__elem-dash {
         margin-right: 16px;
       }
-      // Удаление отступа после последнего
+      
       &__elem-nav-icon:last-child {
         margin-right: 0;
       }
@@ -247,7 +247,7 @@
 
       &--mod-model {
         margin: 0 24px;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         
       }
     }
@@ -257,7 +257,7 @@
         display: none;
       }
       &__elem-next-container{
-        margin: 10px;
+        margin-top: 10px;
       }
     }
   }
@@ -322,5 +322,12 @@
       &--mod-model {
         margin: 0 28px 48px 32px;
       }
-    }  
+    }
+    
+    .block-content-info {
+      &__elem-next-container{
+        margin-top: 15px;
+        
+      }
+    }
   }
