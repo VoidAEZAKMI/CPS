@@ -144,6 +144,7 @@
     display: none;
   }
   .block-content {
+    display: flex;
     flex-direction: column;
   }
   .block-content__elem-text-break {
@@ -159,7 +160,7 @@
   .block-content-info__elem-paragraph-2 {
     display: none;
   }
-  .block-content-info--box-model {
+  .block-content-info--mod-model {
     margin: 0 16px;
   }
 }
@@ -185,6 +186,7 @@
     margin-bottom: 32px;
   }
   .block-content {
+    display: flex;
     gap: 48px;
   }
   .block-content__elem-photo {
@@ -237,7 +239,7 @@
     overflow: visible;
   }
   .block-content {
-    display: block;
+    display: flex;
     gap: 36px;
   }
   .block-content__elem-photo {
