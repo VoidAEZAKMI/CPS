@@ -100,7 +100,7 @@
   border-radius: 6px;
 }
 .block-slidemain .block-content-info__elem-text {
-  margin-bottom: 16px;
+  margin-bottom: 36px;
   color: #1b1c21;
   font-family: TT Lakes;
   font-size: 14px;
@@ -160,8 +160,13 @@
   .block-content-info__elem-paragraph-2 {
     display: none;
   }
+  .block-content-info__elem-next-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   .block-content-info--mod-model {
     margin: 0 16px;
+    margin-bottom: 15px;
   }
 }
 /* ---- TABLET ---- */
@@ -196,10 +201,13 @@
   }
   .block-content--mod-model {
     margin: 0 24px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
   .block-content-info__elem-paragraph-3 {
     display: none;
+  }
+  .block-content-info__elem-next-container {
+    margin: 10px;
   }
 }
 /* ---- DESKTOP ---- */

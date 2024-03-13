@@ -114,7 +114,7 @@
 
   .block-content-info {
     &__elem-text {
-      margin-bottom: 16px;
+      margin-bottom: 36px;
   
       color: #1b1c21;
       font-family: TT Lakes;
@@ -188,9 +188,14 @@
       &__elem-paragraph-2 {
         display: none;
       }
-  
+      &__elem-next-container{
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
       &--mod-model {
         margin: 0 16px;
+        margin-bottom: 15px;
       }
     }
 
@@ -239,16 +244,20 @@
         height: 260px;
         flex-shrink: 0;
       }
-  
+
       &--mod-model {
         margin: 0 24px;
-        margin-bottom: 40px;
+        margin-bottom: 15px;
+        
       }
     }
 
     .block-content-info {
       &__elem-paragraph-3 {
         display: none;
+      }
+      &__elem-next-container{
+        margin: 10px;
       }
     }
   }
