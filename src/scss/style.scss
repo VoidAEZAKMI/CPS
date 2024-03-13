@@ -54,6 +54,96 @@
     margin-bottom: 24px;
   }
 }
+
+
+.block-slidemain {
+  &__elem-shade {
+    width: 24px;
+    height: 40px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    flex-shrink: 0;
+    position: absolute;
+    // prettier-ignore
+    background: linear-gradient(270deg,#f8f8f8 16.84%,rgba(248, 248, 248, 0) 100%);
+  }
+  &--mod-model {
+    position: relative;
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+
+
+  .block-slidemain-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+  
+    &__elem-item {
+      flex-shrink: 0;
+      color: #7e7e82;
+      font-family: TT Lakes;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: -0.2px;
+  
+      &--mod-active {
+        padding: 8px;
+        border: 2px solid #b8ffec;
+        border-radius: 6px;
+        background: #fff;
+      }
+    }
+  }
+
+  .block-content {
+    display: flex;
+  
+    &__elem-photo {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 6px;
+    }
+  }
+
+
+  .block-content-info {
+    &__elem-text {
+      margin-bottom: 16px;
+  
+      color: #1b1c21;
+      font-family: TT Lakes;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 128.571%;
+      letter-spacing: 0.2px;
+    }
+    &__elem-next-container {
+      margin-bottom: 16px;
+      display: flex;
+  
+      color: #1b1c21;
+      font-family: TT Lakes Medium;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      letter-spacing: -0.2px;
+    }
+    &__elem-read-next {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+}
   
   /* ---- MOBILE ---- */
   @media screen and (max-width: 767.9px) {
@@ -61,12 +151,10 @@
       &__elem-dash:nth-child(7) {
         margin-right: auto;
       }
-      // Отступы между каждым элементом
       &__elem-nav-icon,
       &__elem-logo {
         margin-right: 16px;
       }
-      // Удаление отступа после последнего
       &__elem-nav-icon:last-child {
         margin-right: 0;
       }
@@ -79,6 +167,31 @@
       }
     }
 
+    .block-content {
+      flex-direction: column;
+  
+      &__elem-text-break {
+        display: none;
+      }
+      &__elem-photo {
+        flex-shrink: 0;
+        border-radius: 0;
+      }
+  
+      &--mod-model {
+        margin-bottom: 35px;
+      }
+    }
+
+    .block-content-info {
+      &__elem-paragraph-2 {
+        display: none;
+      }
+  
+      &--box-model {
+        margin: 0 16px;
+      }
+    }
 
     
   }
@@ -86,7 +199,7 @@
   /* ---- TABLET ---- */
   @media screen and (min-width: 767.9px) and (max-width: 1023.9px) {
     .block-header-menu {
-      &__elem-logo {
+      &__elem-log-box {
         margin-right: auto;
       }
       // Отступы между каждым элементом
@@ -106,6 +219,34 @@
       }
       &--mod-model {
         margin-bottom: 32px;
+      }
+    }
+
+    .block-slidemain {
+      &--box-model {
+        margin-left: 24px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .block-content {
+      gap: 48px;
+  
+      &__elem-photo {
+        width: 360px;
+        height: 260px;
+        flex-shrink: 0;
+      }
+  
+      &--mod-model {
+        margin: 0 24px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .block-content-info {
+      &__elem-paragraph-3 {
+        display: none;
       }
     }
   }
@@ -139,4 +280,36 @@
         margin: 42px 16px 8px 0;
       }
     }
+
+    .block-slidemain {
+      &__elem-shade {
+        display: none;
+      }
+  
+      &--mod-model {
+        margin-left: 32px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .block-slidemain-row {
+      flex-flow: row wrap;
+      overflow: visible;
+    }
+
+    .block-content {
+      display: block;
+      gap: 36px;
+      
+  
+      &__elem-photo {
+        width: 531.346px;
+        height: 307px;
+        flex-shrink: 0;
+      }
+  
+      &--mod-model {
+        margin: 0 28px 48px 32px;
+      }
+    }  
   }
