@@ -1,3 +1,49 @@
+// @import url(/css/style.css);
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/fonts/TTLakes-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Lakes Medium";
+  src: url("/fonts/TTLakes-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("/fonts/TTLakes-Bold.woff") format("woff");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background: #f8f8f8;
+  font-family: "TT Lakes";
+}
+
+button,
+a {
+  all: initial;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  height: 3px;
+}
+
+
 .block-header-menu {
   height: 88px;
   display: flex;
@@ -43,7 +89,7 @@
     padding-right: 8px;
     color: #1b1c21;
     text-align: right;
-    font-family: TT Lakes Medium;
+    font-family: "TT Lakes Medium";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -84,7 +130,7 @@
     &__elem-item {
       flex-shrink: 0;
       color: #7e7e82;
-      font-family: TT Lakes;
+      font-family: "TT Lakes";
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -117,7 +163,7 @@
       margin-bottom: 16px;
   
       color: #1b1c21;
-      font-family: TT Lakes;
+      font-family: "TT Lakes";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -129,7 +175,7 @@
       display: flex;
   
       color: #1b1c21;
-      font-family: TT Lakes Medium;
+      font-family: "TT Lakes Medium";
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -280,7 +326,7 @@
   
         color: #1b1c21;
         text-align: right;
-        font-family: TT Lakes;
+        font-family: "TT Lakes";
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -331,3 +377,12 @@
       }
     }
   }
+
+
+
+/* ---- DESKTOP ---- */
+@media screen and (min-width: 1439.9px) {
+  body {
+    display: flex; 
+  }
+}
